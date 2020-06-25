@@ -9,7 +9,7 @@ const Image = ({ url, downloadUrl, altDescription }) => {
                 className="block p-2 object-cover"
                 src={url} alt={altDescription} >
             </img>
-            <a href={downloadUrl} target="_blank"
+            <a href={downloadUrl} target="_blank" rel="noopener noreferrer"
                 className="absolute right-0 bottom-0 m-4 bg-white px-4 py-3 z-20 rounded shadow">
                 {<BsDownload />}
             </a>

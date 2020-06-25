@@ -5,7 +5,7 @@ import Navigation from './Navigation';
 import Search from './Search';
 import Gallery from './Gallery';
 import {UNSPLASH_ACCESS_KEY} from '../api/config'
-import { useUnsplashApi } from './useUnsplashApi';
+import { useUnsplashApi } from './hooks/useUnsplashApi';
 
 const App = () => {
   const [query, setQuery] = useState('random')
