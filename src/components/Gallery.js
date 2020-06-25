@@ -15,7 +15,7 @@ const Gallery = ({ query, loading, error, imagesList }) => {
             <div className="flex flex-wrap justify-around w-11/12 mx-auto mt-16">
                 {
                     !loading && !error && imagesList && imagesList.map(image => (
-                        <Image key={image.id} url={image.urls.regular} altDescription={image.alt_description || 'Image'} />
+                        <Image key={image.id} url={image.urls.regular} downloadUrl={image.links.download} altDescription={image.alt_description || 'Image'} />
                     ))
                 }
             </div>

@@ -8,7 +8,7 @@ import {UNSPLASH_ACCESS_KEY} from '../api/config'
 import { useUnsplashApi } from './useUnsplashApi';
 
 const App = () => {
-  const [query, setQuery] = useState('mountain')
+  const [query, setQuery] = useState('random')
   const [loading, error, imagesList] = useUnsplashApi(`https://api.unsplash.com/search/photos?client_id=${UNSPLASH_ACCESS_KEY}&query=${query}&per_page=24`)
   
   const handleClick = (searchText) => {

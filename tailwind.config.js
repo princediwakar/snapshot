@@ -10,12 +10,13 @@ module.exports = {
       },
       fontFamily: {
         'logo': ["Helvetica Neue","sans-serif"],
-      }
+      },
     },
   },
   variants: {
     objectFit: ['responsive', 'hover', 'focus'],
-    zIndex: ['responsive', 'hover', 'focus']
+    zIndex: ['responsive', 'hover', 'focus'],
+    display: ['responsive', 'hover', 'focus'],
   },
   plugins: [],
 }
