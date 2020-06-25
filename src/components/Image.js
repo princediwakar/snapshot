@@ -1,12 +1,10 @@
 import React from 'react'
 
-const Image = ({url, title}) => {
+const Image = ({url, altDescription}) => {
     return (
-        <li className="my-2 w-56 hover:z-10 ">
             <img
-                className="w-56 h-40 object-cover transform duration-500 hover:scale-150 shadow-2xl"
-                src={url} alt={title} />
-        </li>
+                className="py-2 w-1/3 align-middle object-cover"
+                src={url} alt={altDescription} />
     )
 }
 

@@ -27,4 +27,15 @@ export const useFlickrApi = (url) => {
 
 }
     
+// setUrl(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${searchText}&per_page=24&format=json&nojsoncallback=1`)
 
+                          
+  // const imagesList = imageResults.map(image => {
+  //   let farm = image.farm;
+  //   let server = image.server;
+  //   let id = image.id;
+  //   let secret = image.secret;
+  //   let title = image.title;
+  //   let url = `https://farm${farm}.staticflickr.com/${server}/${id}_${secret}_m.jpg`;
+  //   return { id, title, url }
+// })

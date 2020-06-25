@@ -1,26 +1,29 @@
 import React, { useState } from 'react';
 import Header from './Header';
-import { Router } from 'react-router-dom';
-import { useFlickrApi } from './hooks/useFlickrApi';
+import { BrowserRouter as Router} from 'react-router-dom';
 import Navigation from './Navigation';
 import Search from './Search';
 import Gallery from './Gallery';
-import { apiKey } from '../api/config';
+import {UNSPLASH_ACCESS_KEY} from '../api/config'
+import { useUnsplashApi } from './useUnsplashApi';
 
 const App = () => {
   const [query, setQuery] = useState('mountain')
-  const { imageResults, loading, error } = useFlickrApi(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${query}&per_page=24&format=json&nojsoncallback=1`)
-
+  const [loading, error, imagesList] = useUnsplashApi(`https://api.unsplash.com/search/photos?client_id=${UNSPLASH_ACCESS_KEY}&query=${query}&per_page=24`)
+  
   const handleClick = (searchText) => {
     setQuery(searchText)
   }
+
+                          
+
   return (
-    <>
-      <Header />
-      <Search query={query} handleClick={handleClick} />
-      <Navigation handleClick={handleClick} />
-      <Gallery  query={query} loading={loading} error={error} imageResults={imageResults} />
-    </>
+      <Router>
+        <Header />
+        <Search handleClick={handleClick} />
+        <Navigation handleClick={handleClick} />
+        <Gallery query={query} loading={loading} error={error} imagesList={imagesList} />
+      </Router>
   )
 }
 
