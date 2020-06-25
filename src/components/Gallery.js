@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from './Image';
 import { toTitleCase } from '../helpers/toTitleCase';
+import Modal from './Modal'
 
 const Gallery = ({ query, loading, error, imagesList }) => {
+
+    
     console.log("Receiving List",imagesList, query, loading, error)
     return (
         <div>
@@ -12,13 +15,24 @@ const Gallery = ({ query, loading, error, imagesList }) => {
             {loading && <p className="text-center mt-16">Loading...</p>}
             {!loading && error && <p className="text-center">Something went wrong...</p>}
 
+
             <div className="flex flex-wrap justify-around w-11/12 mx-auto mt-16">
                 {
-                    !loading && !error && imagesList && imagesList.map(image => (
-                        <Image key={image.id} url={image.urls.regular} downloadUrl={image.links.download} altDescription={image.alt_description || 'Image'} />
+                    !loading && !error && imagesList && 
+                
+                    imagesList.map(image => (
+                        <Image 
+                            key={image.id} 
+                            url={image.urls.regular} 
+                            downloadUrl={image.links.download} 
+                            altDescription={image.alt_description || 'Image'} 
+
+                        />
                     ))
                 }
             </div>
+
+
         </div>
     )
 }

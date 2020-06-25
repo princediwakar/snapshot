@@ -9,7 +9,7 @@ import { useUnsplashApi } from './hooks/useUnsplashApi';
 
 const App = () => {
   const [query, setQuery] = useState('random')
-  const [loading, error, imagesList] = useUnsplashApi(`https://api.unsplash.com/search/photos?client_id=${UNSPLASH_ACCESS_KEY}&query=${query}&per_page=24`)
+  const [loading, error, imagesList] = useUnsplashApi(`https://api.unsplash.com/search/photos?client_id=${UNSPLASH_ACCESS_KEY}&query=${query}&page=1&per_page=24`)
   
   const handleClick = (searchText) => {
     setQuery(searchText)

@@ -5,6 +5,9 @@ module.exports = {
       width:{
         '120': '30rem'
       },
+      minWidth:{
+        '64': '16rem'
+      },
       maxWidth:{
         '120': '30rem'
       },
