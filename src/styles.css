@@ -6048,6 +6048,10 @@ video {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-logo {
+  font-family: Helvetica Neue, sans-serif;
+}
+
 .font-hairline {
   font-weight: 100;
 }
@@ -7508,6 +7512,10 @@ video {
   max-height: 100vh;
 }
 
+.max-w-120 {
+  max-width: 30rem;
+}
+
 .max-w-none {
   max-width: none;
 }
@@ -7609,6 +7617,46 @@ video {
 }
 
 .object-scale-down {
+  object-fit: scale-down;
+}
+
+.hover\:object-contain:hover {
+  object-fit: contain;
+}
+
+.hover\:object-cover:hover {
+  object-fit: cover;
+}
+
+.hover\:object-fill:hover {
+  object-fit: fill;
+}
+
+.hover\:object-none:hover {
+  object-fit: none;
+}
+
+.hover\:object-scale-down:hover {
+  object-fit: scale-down;
+}
+
+.focus\:object-contain:focus {
+  object-fit: contain;
+}
+
+.focus\:object-cover:focus {
+  object-fit: cover;
+}
+
+.focus\:object-fill:focus {
+  object-fit: fill;
+}
+
+.focus\:object-none:focus {
+  object-fit: none;
+}
+
+.focus\:object-scale-down:focus {
   object-fit: scale-down;
 }
 
@@ -11773,6 +11821,10 @@ video {
   width: 16rem;
 }
 
+.w-120 {
+  width: 30rem;
+}
+
 .w-auto {
   width: auto;
 }
@@ -11918,6 +11970,62 @@ video {
 }
 
 .z-auto {
+  z-index: auto;
+}
+
+.hover\:z-0:hover {
+  z-index: 0;
+}
+
+.hover\:z-10:hover {
+  z-index: 10;
+}
+
+.hover\:z-20:hover {
+  z-index: 20;
+}
+
+.hover\:z-30:hover {
+  z-index: 30;
+}
+
+.hover\:z-40:hover {
+  z-index: 40;
+}
+
+.hover\:z-50:hover {
+  z-index: 50;
+}
+
+.hover\:z-auto:hover {
+  z-index: auto;
+}
+
+.focus\:z-0:focus {
+  z-index: 0;
+}
+
+.focus\:z-10:focus {
+  z-index: 10;
+}
+
+.focus\:z-20:focus {
+  z-index: 20;
+}
+
+.focus\:z-30:focus {
+  z-index: 30;
+}
+
+.focus\:z-40:focus {
+  z-index: 40;
+}
+
+.focus\:z-50:focus {
+  z-index: 50;
+}
+
+.focus\:z-auto:focus {
   z-index: auto;
 }
 
@@ -19786,6 +19894,10 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-logo {
+    font-family: Helvetica Neue, sans-serif;
+  }
+
   .sm\:font-hairline {
     font-weight: 100;
   }
@@ -21246,6 +21358,10 @@ video {
     max-height: 100vh;
   }
 
+  .sm\:max-w-120 {
+    max-width: 30rem;
+  }
+
   .sm\:max-w-none {
     max-width: none;
   }
@@ -21347,6 +21463,46 @@ video {
   }
 
   .sm\:object-scale-down {
+    object-fit: scale-down;
+  }
+
+  .sm\:hover\:object-contain:hover {
+    object-fit: contain;
+  }
+
+  .sm\:hover\:object-cover:hover {
+    object-fit: cover;
+  }
+
+  .sm\:hover\:object-fill:hover {
+    object-fit: fill;
+  }
+
+  .sm\:hover\:object-none:hover {
+    object-fit: none;
+  }
+
+  .sm\:hover\:object-scale-down:hover {
+    object-fit: scale-down;
+  }
+
+  .sm\:focus\:object-contain:focus {
+    object-fit: contain;
+  }
+
+  .sm\:focus\:object-cover:focus {
+    object-fit: cover;
+  }
+
+  .sm\:focus\:object-fill:focus {
+    object-fit: fill;
+  }
+
+  .sm\:focus\:object-none:focus {
+    object-fit: none;
+  }
+
+  .sm\:focus\:object-scale-down:focus {
     object-fit: scale-down;
   }
 
@@ -25511,6 +25667,10 @@ video {
     width: 16rem;
   }
 
+  .sm\:w-120 {
+    width: 30rem;
+  }
+
   .sm\:w-auto {
     width: auto;
   }
@@ -25656,6 +25816,62 @@ video {
   }
 
   .sm\:z-auto {
+    z-index: auto;
+  }
+
+  .sm\:hover\:z-0:hover {
+    z-index: 0;
+  }
+
+  .sm\:hover\:z-10:hover {
+    z-index: 10;
+  }
+
+  .sm\:hover\:z-20:hover {
+    z-index: 20;
+  }
+
+  .sm\:hover\:z-30:hover {
+    z-index: 30;
+  }
+
+  .sm\:hover\:z-40:hover {
+    z-index: 40;
+  }
+
+  .sm\:hover\:z-50:hover {
+    z-index: 50;
+  }
+
+  .sm\:hover\:z-auto:hover {
+    z-index: auto;
+  }
+
+  .sm\:focus\:z-0:focus {
+    z-index: 0;
+  }
+
+  .sm\:focus\:z-10:focus {
+    z-index: 10;
+  }
+
+  .sm\:focus\:z-20:focus {
+    z-index: 20;
+  }
+
+  .sm\:focus\:z-30:focus {
+    z-index: 30;
+  }
+
+  .sm\:focus\:z-40:focus {
+    z-index: 40;
+  }
+
+  .sm\:focus\:z-50:focus {
+    z-index: 50;
+  }
+
+  .sm\:focus\:z-auto:focus {
     z-index: auto;
   }
 
@@ -33525,6 +33741,10 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .md\:font-logo {
+    font-family: Helvetica Neue, sans-serif;
+  }
+
   .md\:font-hairline {
     font-weight: 100;
   }
@@ -34985,6 +35205,10 @@ video {
     max-height: 100vh;
   }
 
+  .md\:max-w-120 {
+    max-width: 30rem;
+  }
+
   .md\:max-w-none {
     max-width: none;
   }
@@ -35086,6 +35310,46 @@ video {
   }
 
   .md\:object-scale-down {
+    object-fit: scale-down;
+  }
+
+  .md\:hover\:object-contain:hover {
+    object-fit: contain;
+  }
+
+  .md\:hover\:object-cover:hover {
+    object-fit: cover;
+  }
+
+  .md\:hover\:object-fill:hover {
+    object-fit: fill;
+  }
+
+  .md\:hover\:object-none:hover {
+    object-fit: none;
+  }
+
+  .md\:hover\:object-scale-down:hover {
+    object-fit: scale-down;
+  }
+
+  .md\:focus\:object-contain:focus {
+    object-fit: contain;
+  }
+
+  .md\:focus\:object-cover:focus {
+    object-fit: cover;
+  }
+
+  .md\:focus\:object-fill:focus {
+    object-fit: fill;
+  }
+
+  .md\:focus\:object-none:focus {
+    object-fit: none;
+  }
+
+  .md\:focus\:object-scale-down:focus {
     object-fit: scale-down;
   }
 
@@ -39250,6 +39514,10 @@ video {
     width: 16rem;
   }
 
+  .md\:w-120 {
+    width: 30rem;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -39395,6 +39663,62 @@ video {
   }
 
   .md\:z-auto {
+    z-index: auto;
+  }
+
+  .md\:hover\:z-0:hover {
+    z-index: 0;
+  }
+
+  .md\:hover\:z-10:hover {
+    z-index: 10;
+  }
+
+  .md\:hover\:z-20:hover {
+    z-index: 20;
+  }
+
+  .md\:hover\:z-30:hover {
+    z-index: 30;
+  }
+
+  .md\:hover\:z-40:hover {
+    z-index: 40;
+  }
+
+  .md\:hover\:z-50:hover {
+    z-index: 50;
+  }
+
+  .md\:hover\:z-auto:hover {
+    z-index: auto;
+  }
+
+  .md\:focus\:z-0:focus {
+    z-index: 0;
+  }
+
+  .md\:focus\:z-10:focus {
+    z-index: 10;
+  }
+
+  .md\:focus\:z-20:focus {
+    z-index: 20;
+  }
+
+  .md\:focus\:z-30:focus {
+    z-index: 30;
+  }
+
+  .md\:focus\:z-40:focus {
+    z-index: 40;
+  }
+
+  .md\:focus\:z-50:focus {
+    z-index: 50;
+  }
+
+  .md\:focus\:z-auto:focus {
     z-index: auto;
   }
 
@@ -47264,6 +47588,10 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-logo {
+    font-family: Helvetica Neue, sans-serif;
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -48724,6 +49052,10 @@ video {
     max-height: 100vh;
   }
 
+  .lg\:max-w-120 {
+    max-width: 30rem;
+  }
+
   .lg\:max-w-none {
     max-width: none;
   }
@@ -48825,6 +49157,46 @@ video {
   }
 
   .lg\:object-scale-down {
+    object-fit: scale-down;
+  }
+
+  .lg\:hover\:object-contain:hover {
+    object-fit: contain;
+  }
+
+  .lg\:hover\:object-cover:hover {
+    object-fit: cover;
+  }
+
+  .lg\:hover\:object-fill:hover {
+    object-fit: fill;
+  }
+
+  .lg\:hover\:object-none:hover {
+    object-fit: none;
+  }
+
+  .lg\:hover\:object-scale-down:hover {
+    object-fit: scale-down;
+  }
+
+  .lg\:focus\:object-contain:focus {
+    object-fit: contain;
+  }
+
+  .lg\:focus\:object-cover:focus {
+    object-fit: cover;
+  }
+
+  .lg\:focus\:object-fill:focus {
+    object-fit: fill;
+  }
+
+  .lg\:focus\:object-none:focus {
+    object-fit: none;
+  }
+
+  .lg\:focus\:object-scale-down:focus {
     object-fit: scale-down;
   }
 
@@ -52989,6 +53361,10 @@ video {
     width: 16rem;
   }
 
+  .lg\:w-120 {
+    width: 30rem;
+  }
+
   .lg\:w-auto {
     width: auto;
   }
@@ -53134,6 +53510,62 @@ video {
   }
 
   .lg\:z-auto {
+    z-index: auto;
+  }
+
+  .lg\:hover\:z-0:hover {
+    z-index: 0;
+  }
+
+  .lg\:hover\:z-10:hover {
+    z-index: 10;
+  }
+
+  .lg\:hover\:z-20:hover {
+    z-index: 20;
+  }
+
+  .lg\:hover\:z-30:hover {
+    z-index: 30;
+  }
+
+  .lg\:hover\:z-40:hover {
+    z-index: 40;
+  }
+
+  .lg\:hover\:z-50:hover {
+    z-index: 50;
+  }
+
+  .lg\:hover\:z-auto:hover {
+    z-index: auto;
+  }
+
+  .lg\:focus\:z-0:focus {
+    z-index: 0;
+  }
+
+  .lg\:focus\:z-10:focus {
+    z-index: 10;
+  }
+
+  .lg\:focus\:z-20:focus {
+    z-index: 20;
+  }
+
+  .lg\:focus\:z-30:focus {
+    z-index: 30;
+  }
+
+  .lg\:focus\:z-40:focus {
+    z-index: 40;
+  }
+
+  .lg\:focus\:z-50:focus {
+    z-index: 50;
+  }
+
+  .lg\:focus\:z-auto:focus {
     z-index: auto;
   }
 
@@ -61003,6 +61435,10 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .xl\:font-logo {
+    font-family: Helvetica Neue, sans-serif;
+  }
+
   .xl\:font-hairline {
     font-weight: 100;
   }
@@ -62463,6 +62899,10 @@ video {
     max-height: 100vh;
   }
 
+  .xl\:max-w-120 {
+    max-width: 30rem;
+  }
+
   .xl\:max-w-none {
     max-width: none;
   }
@@ -62564,6 +63004,46 @@ video {
   }
 
   .xl\:object-scale-down {
+    object-fit: scale-down;
+  }
+
+  .xl\:hover\:object-contain:hover {
+    object-fit: contain;
+  }
+
+  .xl\:hover\:object-cover:hover {
+    object-fit: cover;
+  }
+
+  .xl\:hover\:object-fill:hover {
+    object-fit: fill;
+  }
+
+  .xl\:hover\:object-none:hover {
+    object-fit: none;
+  }
+
+  .xl\:hover\:object-scale-down:hover {
+    object-fit: scale-down;
+  }
+
+  .xl\:focus\:object-contain:focus {
+    object-fit: contain;
+  }
+
+  .xl\:focus\:object-cover:focus {
+    object-fit: cover;
+  }
+
+  .xl\:focus\:object-fill:focus {
+    object-fit: fill;
+  }
+
+  .xl\:focus\:object-none:focus {
+    object-fit: none;
+  }
+
+  .xl\:focus\:object-scale-down:focus {
     object-fit: scale-down;
   }
 
@@ -66728,6 +67208,10 @@ video {
     width: 16rem;
   }
 
+  .xl\:w-120 {
+    width: 30rem;
+  }
+
   .xl\:w-auto {
     width: auto;
   }
@@ -66873,6 +67357,62 @@ video {
   }
 
   .xl\:z-auto {
+    z-index: auto;
+  }
+
+  .xl\:hover\:z-0:hover {
+    z-index: 0;
+  }
+
+  .xl\:hover\:z-10:hover {
+    z-index: 10;
+  }
+
+  .xl\:hover\:z-20:hover {
+    z-index: 20;
+  }
+
+  .xl\:hover\:z-30:hover {
+    z-index: 30;
+  }
+
+  .xl\:hover\:z-40:hover {
+    z-index: 40;
+  }
+
+  .xl\:hover\:z-50:hover {
+    z-index: 50;
+  }
+
+  .xl\:hover\:z-auto:hover {
+    z-index: auto;
+  }
+
+  .xl\:focus\:z-0:focus {
+    z-index: 0;
+  }
+
+  .xl\:focus\:z-10:focus {
+    z-index: 10;
+  }
+
+  .xl\:focus\:z-20:focus {
+    z-index: 20;
+  }
+
+  .xl\:focus\:z-30:focus {
+    z-index: 30;
+  }
+
+  .xl\:focus\:z-40:focus {
+    z-index: 40;
+  }
+
+  .xl\:focus\:z-50:focus {
+    z-index: 50;
+  }
+
+  .xl\:focus\:z-auto:focus {
     z-index: auto;
   }
 

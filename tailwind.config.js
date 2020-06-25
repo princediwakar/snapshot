@@ -1,8 +1,21 @@
 module.exports = {
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      width:{
+        '120': '30rem'
+      },
+      maxWidth:{
+        '120': '30rem'
+      },
+      fontFamily: {
+        'logo': ["Helvetica Neue","sans-serif"],
+      }
+    },
   },
-  variants: {},
+  variants: {
+    objectFit: ['responsive', 'hover', 'focus'],
+    zIndex: ['responsive', 'hover', 'focus']
+  },
   plugins: [],
 }
