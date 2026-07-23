@@ -1,6 +1,6 @@
+"use client";
 import React, { useState } from 'react';
 import Header from './Header';
-import { BrowserRouter as Router} from 'react-router-dom';
 import Navigation from './Navigation';
 import Search from './Search';
 import Gallery from './Gallery';
@@ -15,15 +15,13 @@ const App = () => {
     setQuery(searchText)
   }
 
-                          
-
   return (
-      <Router>
+      <div>
         <Header />
         <Search handleClick={handleClick} />
         <Navigation handleClick={handleClick} />
         <Gallery query={query} loading={loading} error={error} imagesList={imagesList} />
-      </Router>
+      </div>
   )
 }
 
